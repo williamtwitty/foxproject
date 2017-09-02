@@ -1,0 +1,45 @@
+.navbody {
+  display: flex;
+  background-color: #74CAF6;
+  position: relative;
+  justify-content: space-between;
+}
+
+.main-container {
+  display:flex;
+  width: 100%;
+  height: 120vh;
+  background-color: #EA8C8C;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  padding: 100px;
+}
+
+.pic-container {
+  display: flex;
+  width: 30%;
+  height: 30vh;
+  border: 2px solid green;
+ flex-flow: row wrap;
+}
+.button-container {
+  width: 35%; 
+  height: 30vh;
+}
+
+.pic-container img {
+  width: 65%;
+  height: 30vh;
+}
+
+.info-box {
+  height: 100px;
+  width: 400px;
+  border: solid blue;
+}
+
+.navbody img {
+
+  width: 80px;
+  height: 80px;
+}
