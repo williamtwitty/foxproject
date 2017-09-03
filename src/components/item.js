@@ -10,6 +10,7 @@ class Item extends Component {
             img: props.img
 
         }
+
     }
 
     componentWillReceiveProps(props) {
@@ -26,13 +27,16 @@ class Item extends Component {
         return (
 
                 <div className="pic-container">
-                    <img src={ this.props.img} alt={this.props.alt} />
+                    <img src={ this.props.picture.image} alt={this.props.picture.alt} />
                     <div className="button-container">
-                    <Button color="success">Buy Now</Button>{' '}
+                    <Button color="success" onClick={(e) => {this.props.deleteItem(this.props.picture.id)} } >Buy Now</Button>{' '}
                     <Button color="info">More info</Button>{' '}
+                    <Button color="warning" onClick={(e) => {this.props.addToCart(this.props.picture.id)} } >Add to Cart</Button>{' '}
                     </div>
                         <div className="info-box">
+                            {}
                         </div>
+
                 </div>        
 
         );
