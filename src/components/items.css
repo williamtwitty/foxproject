@@ -1,0 +1,21 @@
+.pic-container {
+    display: flex;
+    width: 30%;
+    height: 30vh;
+    flex-flow: row wrap;
+  }
+  .button-container {
+    width: 35%; 
+    height: 30vh;
+  }
+  
+  .pic-container img {
+    width: 65%;
+    height: 30vh;
+  }
+  
+  .info-box {
+    height: 100px;
+    width: 400px;
+    border: solid blue;
+  }
