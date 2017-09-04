@@ -1,18 +1,34 @@
+.background {
+  background-image: url("https://www.instagram.com/p/BSkcbBzDH1p/?taken-by=phoenixfoxdesigns");
+}
+
 .navbody {
   display: flex;
-  background-color: #74CAF6;
+  background-color: #D7EEF9;
   position: relative;
   justify-content: space-between;
+  font-family: cursive;
 }
 
 .main-container {
   display:flex;
   width: 100%;
-  height: 120vh;
-  background-color: #C1C1C1;
+  height: 100vh;
+  background-color: #D7EEF9;
   flex-flow:row wrap;
   justify-content: space-around;
-  padding: 100px;
+  
+}
+
+.title-container {
+  display: inline-flex;
+  font-family: cursive;
+  font-size: 35px;
+  width: 100%;
+  height: 10vh;
+  background-color: #D7EEF9;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbody img {

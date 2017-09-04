@@ -66,8 +66,8 @@ class App extends Component {
       return <CartItem obj={elem}/>
     })
     return (     
-
       <div>
+        
         <div className="navbody">
 
             <Navbar color="faded" light toggleable>
@@ -77,7 +77,7 @@ class App extends Component {
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                   <NavItem>
-                    <NavLink href="/components/">Components</NavLink>
+                    <NavLink href="/shopping-container/">Shopping Cart</NavLink>
                   </NavItem>
                   <NavItem>
                     <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
@@ -90,15 +90,20 @@ class App extends Component {
 
         </div>
 
-        <div className="main-container">
+        <div className="title-container">Fox Designs Collection
+            </div>
+        <div className="main-container background">
 
             {items}
-
         </div>
-        <div className="shopping-container">Shopping Cart
+        <div className="title-container">Shopping Cart</div>
+      <div className="cart-container">
+        <div className="shopping-container">
             {cartItems}
               </div>
       </div>
+      </div>
+
 );
 }
 }
