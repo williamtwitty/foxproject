@@ -14,7 +14,7 @@ app.use(cors())
 app.get("/api/get", itemManager.getitems)
 app.delete("/api/delete/:id", itemManager.removeBought)
 app.post("/api/post/:id", itemManager.addToCartList)
-
+app.get("/api/getinfo/:id", itemManager.getInfo)
 
 
 app.listen(port, ()=>{

@@ -4,6 +4,7 @@ import './components/items.css';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Button } from 'reactstrap';
 import Item from './components/item';
 import {removeBought, getitems, addToCartList} from './services/manager';
+import CartItem from './components/cartItem';
 
 
 
@@ -14,13 +15,12 @@ class App extends Component {
     this.state = {
       items: [],
       collapsed: true,
-      cartList: []
+      cartList: [],
     };
 
     this.toggleNavbar = this.toggleNavbar.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.addToCart = this.addToCart.bind(this);
-    //this.moreInfo = this.moreInfo.bind(this);
   }
     componentDidMount(){
       getitems().then((res)=>{
@@ -62,8 +62,9 @@ class App extends Component {
     const items = this.state.items.map( elem => {
       return <Item picture={elem} deleteItem={this.deleteItem} addToCart={this.addToCart}/>
     })
-
-
+    const cartItems = this.state.cartList.map( elem => {
+      return <CartItem obj={elem}/>
+    })
     return (     
 
       <div>
@@ -95,6 +96,7 @@ class App extends Component {
 
         </div>
         <div className="shopping-container">Shopping Cart
+            {cartItems}
               </div>
       </div>
 );

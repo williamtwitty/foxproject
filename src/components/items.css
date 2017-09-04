@@ -17,15 +17,20 @@
   }
   
   .info-box {
-
+    display: flex;
+    font-family: cursive;
     height: 100px;
     width: 400px;
-    border: solid blue;
+    align-items: center;
   }
   
   .shopping-container { 
+    display: flex;
     background-color: #FFFF9A;
-    height: 40vh;
+    height: 40%;
     width: 100%;
-    text-align: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
   }
+
+
