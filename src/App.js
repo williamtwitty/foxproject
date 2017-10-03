@@ -5,7 +5,7 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink, Bu
 import Item from './components/item';
 import {removeBought, getitems, addToCartList} from './services/manager';
 import CartItem from './components/cartItem';
-
+import TwittyTracker from './tracker-js/TwittyTracker'
 
 
 class App extends Component {
@@ -102,6 +102,7 @@ class App extends Component {
             {cartItems}
               </div>
       </div>
+      <TwittyTracker/>
       </div>
 
 );
